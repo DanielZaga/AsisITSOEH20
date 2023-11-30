@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/logo"
+        android:label="Assistence-ITSOEH"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AsisITSOEH20"
+        tools:targetApi="31">
+        <activity android:name="inicio_registro" />
+        <activity android:name="nav_menu"/>
+        <activity android:name="nav_alumnos"/>
+        <activity android:name="nav_profesores"/>
+        <activity android:name="nav_solicitudes"/>
+        <activity android:name="nav_alumnos_info"/>
+        <activity android:name="nav_clases_info"/>
+        <activity android:name="nav_profesores_clases"/>
+
+        <activity
+            android:name=".inicio_login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

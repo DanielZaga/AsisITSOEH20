@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_generic"
+    android:gravity="center"
+    tools:context=".nav_menu">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top|center"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_menu_btn"
+            android:layout_gravity="right|end"
+            android:layout_marginRight="30dp"
+            android:padding="8dp"
+            android:src="@drawable/menu"
+            android:contentDescription="Menu de Hamburgesa"
+            android:onClick="menuHamburgesa"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_title"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:text="   Asistencias ITSOEH   "
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_menu_btn"
+            android:padding="8dp"
+            android:layout_gravity="left|start"
+            android:layout_marginLeft="30dp"
+            android:contentDescription="boton de Cerrar Sesion"
+            android:src="@drawable/cerrar_sesion"
+            android:onClick="cerrarSesion"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="16dp"
+        android:background="@drawable/background_contenetor"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_marginBottom="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/background_title"
+            android:orientation="vertical"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:text="         Bienvenido         "
+                android:textSize="30sp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/btn_menublue"
+            >
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:id="@+id/inicio_menu_Estudiantes"
+                android:background="@drawable/btn_menublue"
+                android:orientation="horizontal"
+                android:layout_margin="15dp"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/alumn"
+                    />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btn_menuEstudiantes"
+                    android:backgroundTint="@color/blue"
+                    android:textColor="@color/white"
+                    android:text="Estudiantes"
+                    android:onClick="onClickEstudiantes"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:id="@+id/inicio_menu_Profesores"
+                android:background="@drawable/btn_menublue"
+                android:orientation="horizontal"
+                android:layout_marginBottom="15dp"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/nom"
+                    />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btn_menuProfesores"
+                    android:backgroundTint="@color/blue"
+                    android:textColor="@color/white"
+                    android:text="Profesores"
+                    android:onClick="onClickProfesores"
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:id="@+id/inicio_menu_Solicitudes"
+                android:background="@drawable/btn_menublue"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/info"
+                    />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btn_menuSolicitudes"
+                    android:backgroundTint="@color/blue"
+                    android:textColor="@color/white"
+                    android:text="Solicitudes"
+                    android:onClick="onClickSolicitudes"
+
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
